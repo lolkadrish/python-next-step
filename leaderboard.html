@@ -1,0 +1,10 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="referrer" content="no-referrer"><title>CodeBloom — we have moved</title><script>(() => {
+  const base='https://lolkadrish.github.io/codebloom/';
+  const allowed=['','index.html','python.html','python-path.html','branching/','branching/index.html','continuation.html','loops.html','theory.html','account.html','leaderboard.html','javascript.html','javascript/','javascript/theory.html'];
+  let route=location.pathname.startsWith('/python-next-step/')?location.pathname.slice('/python-next-step/'.length):'';
+  if(!allowed.includes(route))route='index.html';
+  const hash=/^#[a-z0-9-]+$/.test(location.hash)?location.hash:'';
+  if((route===''||route==='index.html')&&["museum", "sign", "range", "weekend", "delivery", "divisible", "club", "coupon", "grade", "robot", "label", "tariff"].includes(hash.slice(1)))route='python.html';
+  try { const name='python_learning_start_choice_v1',entry=document.cookie.split(';').map(x=>x.trim()).find(x=>x.startsWith(name+'=')),value=entry?.slice(name.length+1);if(['local','account','seen'].includes(value))document.cookie=name+'='+value+'; Path=/codebloom/; Max-Age=34560000; SameSite=Lax; Secure'; } catch {}
+  location.replace(base+(route||'index.html')+hash);
+})();</script><style>body{font:18px/1.8 system-ui;background:#151620;color:#e8e6f3;padding:50px;max-width:700px;margin:auto}a{color:#b29aff}</style></head><body><h1>CodeBloom</h1><p>Our learning site has a new name and address. Your browser’s saved progress is kept.</p><p><a href="https://lolkadrish.github.io/codebloom/">Continue to CodeBloom →</a></p></body></html>
